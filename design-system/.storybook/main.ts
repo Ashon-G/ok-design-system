@@ -9,20 +9,11 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
-    '@storybook/addon-docs',
   ],
   framework: {
     name: "@storybook/react-webpack5",
-    options: {
-      sourceLoaderOptions: {
-      injectStoryParameters: false,
-    },},
+    options: {},
   },
   staticDirs: ["../public"],
 };
-
-export default {
-  addons: ['@storybook/addon-storysource',
-    'config',
-  ],
-};
+export default config;
