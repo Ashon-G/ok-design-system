@@ -1,0 +1,16 @@
+
+@import '../../styles/global.css';
+
+.input {
+  padding: 12px;
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  box-shadow: 4px 4px var(--shadow-color);
+  transition: border 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}

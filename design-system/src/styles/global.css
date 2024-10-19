@@ -1,0 +1,21 @@
+
+:root {
+  /* Base Colors */
+  --primary-color: #007bff; /* Blue */
+  --primary-pastel: #b3d7ff; /* Pastel Blue */
+  
+  --secondary-color: #ff6600; /* Orange */
+  --secondary-pastel: #ffb380; /* Pastel Orange */
+  
+  --text-color: #333;
+  --border-color: #000;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --border-radius: 8px;
+  --font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #fff;
+  color: var(--text-color);
+}

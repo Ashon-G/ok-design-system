@@ -1,0 +1,54 @@
+/* src/components/Checkbox/checkbox.css */
+
+/* Container for the checkbox */
+.container {
+  --input-focus: #2d8cf0;      /* Focus color */
+  --input-out-of-focus: #fff;  /* Out-of-focus color */
+  --bg-color: #fff;            /* Background color */
+  --main-color: #323232;       /* Main color for border and shadow */
+  position: relative;
+  cursor: pointer;
+  display: flex;                /* Align items for the label */
+  align-items: center;          /* Center vertically */
+}
+
+/* Hide the default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;                  /* Completely hide the checkbox */
+}
+
+/* Custom checkmark style */
+.checkmark {
+  width: 20px;                 /* Width of the checkmark */
+  height: 20px;                /* Height of the checkmark */
+  border: 2px solid var(--main-color); /* Border color */
+  border-radius: 5px;         /* Rounded corners */
+  background-color: var(--input-out-of-focus); /* Background color */
+  transition: background-color 0.3s; /* Smooth transition for background */
+  position: relative;
+  box-shadow: 4px 4px var(--main-color); /* Shadow for depth */
+}
+
+/* Change background when checked */
+.container input:checked + .checkmark {
+  background-color: var(--input-focus); /* Change to focus color */
+}
+
+/* Checkmark icon */
+.checkmark:after {
+  content: "";
+  width: 5px;                      /* Width of the checkmark icon */
+  height: 12px;                    /* Height of the checkmark icon */
+  position: relative;
+  left: 5px;                      /* Position from the left */
+  display: none;                  /* Initially hidden */
+  border: solid var(--bg-color);  /* Border color of the checkmark */
+  border-width: 0 2.5px 2.5px 0;  /* Border width for checkmark */
+  transform: rotate(45deg);       /* Rotate to form checkmark */
+}
+
+/* Display the checkmark when checked */
+.container input:checked + .checkmark:after {
+  display: block;                 /* Show checkmark when checked */
+}

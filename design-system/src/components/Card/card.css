@@ -1,0 +1,19 @@
+
+@import '../../styles/global.css';
+
+.card {
+  padding: 16px;
+  background-color: #fff;
+  border: 2px solid var(--border-color);
+  box-shadow: 6px 6px var(--shadow-color);
+  border-radius: var(--border-radius);
+}
+
+.card-title {
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.card-content {
+  color: var(--text-color);
+}

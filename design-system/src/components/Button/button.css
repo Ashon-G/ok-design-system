@@ -1,0 +1,35 @@
+
+@import '../../styles/global.css';
+
+.button-base {
+  padding: 12px 24px;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-primary {
+  background-color: var(--primary-pastel);
+  color: black;
+  box-shadow: 4px 4px var(--shadow-color);
+}
+
+.button-primary:hover {
+  background-color: #0056b3;
+  box-shadow: none;
+  color: white;
+}
+
+.button-secondary {
+  background-color: var(--secondary-pastel);
+  color: black;
+  box-shadow: 4px 4px var(--shadow-color);
+}
+
+.button-secondary:hover {
+  background-color: #cc5200;
+  color: white;
+  box-shadow: none;
+}
